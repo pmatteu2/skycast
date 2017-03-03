@@ -3,7 +3,7 @@
 ## Getting Started
 
 ```
-$ git clone https://github.com/mindeavor/node-catapult my-project
+$ git clone https://github.com/pmatteu2/skycast.git my-project
 $ cd my-project
 $ npm install
 $ npm start
