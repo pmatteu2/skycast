@@ -8,8 +8,8 @@ var $ = require('jquery');
 var bodyParser = require('body-parser')
 
 //i have these in my api keys folder
-var googleKey = 'AIzaSyC5KNAtWHy5vpLCldCoweXmHt3vavE7WPE'
-var darkskyKey ='2baebc1a04039e0b5e52ff7c93e5af27'
+//var googleKey = 
+//var darkskyKey =
 var routes = express.Router()
 
 routes.use(bodyParser.json());
