@@ -1,4 +1,4 @@
-var browserify = require('browserify-middleware')
+var browserify = require('browserify-middleware')//99.9% sure dont use or need
 var express = require('express')
 var Path = require('path')
 var axios = require('axios')
@@ -7,7 +7,7 @@ var url = require('url')
 var $ = require('jquery');
 var bodyParser = require('body-parser')
 
-//
+//i have these in my api keys folder
 var googleKey = 'AIzaSyC5KNAtWHy5vpLCldCoweXmHt3vavE7WPE'
 var darkskyKey ='2baebc1a04039e0b5e52ff7c93e5af27'
 var routes = express.Router()
