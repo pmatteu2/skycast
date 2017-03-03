@@ -7,8 +7,9 @@ var url = require('url')
 var $ = require('jquery');
 var bodyParser = require('body-parser')
 
-
+//
 var googleKey = 'AIzaSyC5KNAtWHy5vpLCldCoweXmHt3vavE7WPE'
+var darkskyKey ='2baebc1a04039e0b5e52ff7c93e5af27'
 var routes = express.Router()
 
 routes.use(bodyParser.json());
@@ -44,7 +45,7 @@ routes.get('/gogo', function(req, res) {
         lat = resp.data.results[0].geometry.location.lat.toString();
         long = resp.data.results[0].geometry.location.lng.toString();
         //console.log(lat,long,'pjpj')
-        axios.get('https://api.darksky.net/forecast/2baebc1a04039e0b5e52ff7c93e5af27/'+lat+","+long+hist)
+        axios.get('https://api.darksky.net/forecast/'+darkskyKey+'/'+lat+","+long+hist)
 
         .then(function(resp){
           //console.log(resp.data)
